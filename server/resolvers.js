@@ -1,5 +1,6 @@
-const { PubSub, withFilter } = require("graphql-yoga");
-const { User, Message } = require('./models');
+const { withFilter, PubSub } = require('graphql-yoga');
+const { User } = require('./models/user');
+const { Message } = require('./models/message');
 
 const resolvers = {
   Query: {
